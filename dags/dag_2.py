@@ -75,7 +75,7 @@ def update_report(**kwargs):
         writer.writerow(new_row)
 
 with DAG(
-        "color_processing_dag_2",
+        "dag_2",
         start_date=datetime(2024, 1, 1),
         schedule=[colors_file],  # Запустится после обновления colors.json
         catchup=False,

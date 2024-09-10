@@ -17,7 +17,7 @@ colors_file = Dataset(os.path.join(color_files_dir, 'colors.json'))
 os.makedirs(color_files_dir, exist_ok=True)
 
 with DAG(
-        dag_id='combined_dag_v3',
+        dag_id='dag_1',
         schedule_interval=None,
         start_date=days_ago(1),
         catchup=False,
